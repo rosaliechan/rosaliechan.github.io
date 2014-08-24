@@ -36,6 +36,9 @@
       padding: 5px;
       background: rgba(0,0,0,0.5);
     }
+    ul a {
+    text-decoration: none;
+    }
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
@@ -43,10 +46,13 @@
       font-size: 20px;
       opacity: 1;
     }
-div.transbox {
+	div.transbox {
     background-color: #ffffff;
     opacity: 0.5;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin: -25px 0 0 0;
     height: 290px;
-}
+	}
+	a:hover {
+    color: #3399CC;
+    }
