@@ -1,7 +1,7 @@
     header {
       text-align: left;
       background-size: cover;
-      color: blue;
+      color: #3399CC;
     }
     body {
     background: url('http://s7.postimg.org/8my444ga3/DSC_2784.jpg');
@@ -11,15 +11,15 @@
       color: white;
     }
     h1 {
-      font-size: 60px;
-      font-family: "Trebuchet MS";
+      font-size: 70px;
+      font-family: 'Cabin', sans-serif;
       padding: 20px;
     }
     h2 {
     font-family: garamond;
-    color: aqua;
-    margin-top: -80px;
-    font-size: 30px;
+    color: #333399;
+    margin-top: -90px;
+    font-size: 35px;
     padding: 20px;
     }
     img {
@@ -27,20 +27,21 @@
       border: 3px solid white;
       border-radius: 20px;
     }
-    ul {
+    ul.buttons {
       padding: 5px;
       background: rgba(0,0,0,0.5);
     }
     li {
       display: inline;
       padding: 0px 10px 0px 10px;
-      font-family: "Trebuchet MS";
+      font-family: 'Cabin', sans-serif;
       font-size: 20px;
+      opacity: 1;
     }
 div.transbox {
     background-color: #ffffff;
     opacity: 0.5;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     margin: -25px 0 0 0;
-    height: 250px;
+    height: 290px;
 }
