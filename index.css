@@ -9,6 +9,7 @@
     }
     a {
       color: white;
+      text-decoration: none;
     }
     h1 {
       font-size: 70px;
@@ -34,9 +35,6 @@
   ul.buttons {
       padding: 5px;
       background: rgba(0,0,0,0.5);
-    }
-    ul a {
-    text-decoration: none;
     }
     li {
       display: inline;
@@ -75,8 +73,14 @@ h3.writinglist {
 	padding: 1px;
 	line-height: 1px;
 	}
-h3.head {
+h4 {
 	font-size: 24px;
 	padding: 1px;
 	line-height: 1px;
+	font-family: 'Philosopher', sans-serif;
+	color: white;
+	}
+ul.writinglist {
+	position: relative;
+	bottom: 80px;
 	}
