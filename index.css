@@ -23,7 +23,7 @@
     padding: 20px;
     }
     h3 {
-    padding: 20px;
+    padding: 20px 20px 15px 20px;
     font-family: 'EB Garamond', serif;
     color: #333399;
     }
@@ -64,7 +64,3 @@ img:hover {
     opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
-embed {
-	position: relative;
-	left: 20px;
-	}
