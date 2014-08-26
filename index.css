@@ -63,3 +63,20 @@ img:hover {
     opacity: 0.8;
     filter: alpha(opacity=80); /* For IE8 and earlier */
 }
+a.writinglist {
+	color: #333399;
+	}
+a.writinglist:hover {
+	color: #3399CC;
+	}
+h3.writinglist {
+	font-size: 20px;
+	color: #333399;
+	padding: 1px;
+	line-height: 1px;
+	}
+h3.head {
+	font-size: 24px;
+	padding: 1px;
+	line-height: 1px;
+	}
