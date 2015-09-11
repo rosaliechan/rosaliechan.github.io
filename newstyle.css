@@ -1,0 +1,53 @@
+body {
+background-color: black;
+color:white;
+font-family: 'Cantarell', sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.navigation ul li {
+    display:inline;
+}
+
+li {
+    color:white;
+    list-style-type: none;
+}
+
+li:hover {
+    cursor: pointer;
+    cursor: hand;
+    color: limegreen;
+}
+
+article {
+    display:none;
+}
+
+#contact ul li {
+    display: inline;
+}
+
+#video ul li {
+    display: inline;
+}
+
+#code ul li {
+    display: inline;
+}
+
+h1 {
+    padding-top: 150px;
+    font-size: 72px;
+    text-align:center;
+    border-bottom: 3px limegreen solid;
+}
+
+nav {
+    padding-top: -10px;
+}
+
+a, h2 {
+    color: limegreen;
+}
