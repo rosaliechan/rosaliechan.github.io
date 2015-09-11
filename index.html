@@ -1,0 +1,200 @@
+<html>
+<head>
+<link rel="stylesheet" href="newstyle.css">
+    <link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+$(document).ready(function() {
+
+var $articles = $('article');
+
+$('li').click(function(e) {
+	var $clickedItem = $(e.target);
+	var articleID = $clickedItem.data('article');
+
+	for (i = 0; i < $articles.length; i++) {
+		var a = $($articles[i]);
+		a.css({'display': 'none'});
+	if (a.attr('id') == articleID) {
+		a.css({'display': 'block'});
+
+	}
+}
+
+
+});
+});
+</script>
+</head>
+
+<body>
+    <h1>Rosalie Marian Chan</h1>
+    	<nav class="navigation">
+			<center>
+		<ul>
+<li data-article="about">About</li>
+<li data-article="writing">Writing</li>
+<li data-article="code">Code</li>
+<li data-article="video">Video</li>
+<li data-article="photo">Photography</li>
+		</ul>
+</center>
+	</nav>
+    
+    <div id="about">
+		<article id="about">
+			<h2>About Me</h2>
+		<p>Hello!  My name is Rosalie Chan, and I am a journalism and computer science student at Northwestern University.  I have been involved in journalism since high school and have written, edited and produced multimedia content for various publications.  I am especially interested in the intersection of journalism and technology, notably online, multimedia and interactive journalism.  My goals include learning more about computer science and how to tell stories in more dynamic ways.  I believe every person has a story, and I am especially interested in reporting on diversity, race, education, immigration, and Asian and Latino issues.
+    In my free time, I experiment with photography and code.  I coded this website out of scratch.  Other than that, I love cats, books, running, card games, updating my endless Spotify playlists and the city of Chicago.  You can view my resume <a href="resume.pdf" ><u>here</u></a> and/or <a href="mailto:rosaliechan2017@u.northwestern.edu" ><u>shoot me an email</u></a>.</p>
+	</article>
+    </div>
+    
+    <div id="writing">
+		<article id="writing">
+   <h2>Writing</h2>
+<ul>
+<h4><u>Topic: Race and Identity</u></h4>
+<li><a href="http://apps.northbynorthwestern.com/hungry/wrapup/"  target="_blank">Next Steps: The Future of Asian American Studies at Northwestern</a></li> 
+<li><a href="http://www.northbynorthwestern.com/story/intersectionality/" target="_blank">Intersectionality sheds new light on sexual assault</a></li>   
+<li><a href="http://www.chicagoreporter.com/tcr-talks-economics-black-power#.VKGDvcAClA"  target="_blank">TCR Talks: The economics of black power</a></li>
+<li><a href="http://chicagoreporter.com/tcr-talks-challenging-stereotypes-about-asian-americans#.U_wWPrxdWd4"  target="_blank">TCR Talks: Challenging stereotypes about Asian Americans</a></li>
+<li><a href="http://chicagoreporter.com/display-funky-fun-side-civil-rights-movement#.U_wWQrxdWd4"  target="_blank">On display: A funky, fun side of the Civil Rights Movement</a></li>
+    </ul>   
+    <br>
+<ul>  
+<h4><u>Topic: Economic Inequality</u></h4>
+<li><a href="http://www.chicagoreporter.com/internet-reforms-could-limit-low-income-consumers-%E2%80%98slow-lane%E2%80%99#.VKGDusAClA"  target="_blank">Internet reforms could limit low-income consumers to 'slow lane'</a></li>
+<li><a href="http://chicagoreporter.com/moratorium-sro-conversion-while-long-term-solution-crafted#.U_wWRbxdWd4"  target="_blank">Moratorium on SRO conversion while long-term solution is crafted</a></li>
+ </ul> 
+<br>
+<ul>
+<h4><u>Topic: Religion</u></h4>
+<li><a href="http://apps.northbynorthwestern.com/magazine/2015/winter/seeking-faith/"  target="_blank">Seeking Faith</a></li>
+<li><a href="http://www.nuasianmag.com/?p=1543"  target="_blank">School of Faith</a></li>
+    </ul>
+ <br>
+<ul>
+<h4><u>Other Features</u></h4> 
+<li><a href="http://www.mochimag.com/article/a-life-of-risk-foreign-correspondent-amna-nawaz"  target="_blank">A Life of Risk</a></li>
+<li><a href="http://www.northbynorthwestern.com/story/food-trucks-come-to-lakefill-for-dillo-day-distrac/"  target="_blank">Food trucks come to lakefill for Dillo Day distraction</a></li>
+    <li><a href="http://www.northbynorthwestern.com/story/the-kids-are-all-wrong-brings-improv-quirk-to-nu-c/"  target="_blank">'The Kids Are All Wrong' brings improv, quirk to NU Channel 1</a></li>
+<li><a href="http://www.northbynorthwestern.com/story/when-gay-men-cant-donate/"  target="_blank">When gay men can't donate</a></li>
+</ul>
+  <br>  
+<ul>
+<h4><u>Personal Essays</u></h4> 
+<li><a href="http://www.northbynorthwestern.com/story/why-i/"  target="_blank">Why I Listen</a></li>
+</ul>
+	</article>
+    </div>
+    
+    <div id="code">
+    <article id="code">
+        <h2>Code</h2>
+      	<h4><a href="http://www.northbynorthwestern.com/" target="_blank">North by Northwestern</a></h4>
+   	<ul>
+   	<li><a href="http://www.northbynorthwestern.com/story/a-day-on-a-film-set/" target="_blank"><img src="rtvf.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/hungry/timeline/" target="_blank"><img src="timeline.png"></a></li>
+   	<li><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank"><img src="madlibs.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/march-madness/" target="_blank"><img src="bball.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/zaramela/" target="_blank"><img src="band.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/toby-jugs/" target="_blank"><img src="jugs.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/nu-divest/" target="_blank"><img src="divest.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/homeless/" target="_blank"><img src="homeless.png"></a></li>
+   	<li><a href="http://www.northbynorthwestern.com/story/ask-me-about/" target="_blank"><img src="ask.png"></a></li>
+   	<li><a href="http://apps.northbynorthwestern.com/submerged/" target="_blank"><img src="submerged.png"></a></li>
+	</ul>
+	
+	<h4><a href="http://www.mochimag.com/" target="_blank">Mochi Magazine</a></h4>
+	<ul>
+	<li><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank"><img src="mochi.png"></a></li>
+	</ul>
+	
+	<h4>Innovation in Journalism and Technology</h4>
+		<ul>
+	<li><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank"><img src="wiki.png"></a></li>
+	</ul>
+    </article>
+        </div>
+    
+    <div id="video">
+    <article id="video">
+        <h2>Video</h2>
+ 	 <h4><a href="http://www.northbynorthwestern.com/" target="_blank">North by Northwestern</a></h4>
+   <ul>
+	<li>
+   <iframe src="http://player.vimeo.com/video/93101544" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   <li>
+   <iframe src="http://player.vimeo.com/video/95301612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe src="http://player.vimeo.com/video/96841624" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </li>
+   <li>
+	<iframe src="http://player.vimeo.com/video/112014733" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </li>
+   </ul>
+   <h4>Enterprise Reporting in Diverse Communities</h4>
+   <ul>
+   <li>
+   <iframe width="500" height="281" src="http://www.youtube.com/embed/Eg_3Hnca3Yg" frameborder="0" allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe width="500" height="281" src="http://www.youtube.com/embed/pJgfuC4T5Pg" frameborder="0" allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe width="500" height="281" src="http://www.youtube.com/embed/2PMOKIGFzRc" frameborder="0" allowfullscreen></iframe>
+   </li>
+   </ul>
+   <h4>Multimedia Journalism</h4>
+   <ul>
+   <li>
+   <iframe width="500" height="281" src="http://www.youtube.com/embed/eALXeOZ4Y5g" frameborder="0" allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe width="500" height="281" src="http://www.youtube.com/embed/3MVAoNt96n4" frameborder="0" allowfullscreen></iframe>
+   <li>
+   </ul>
+   <h4>Video Art</h4>
+   <ul>
+   <li>
+   <iframe src="http://player.vimeo.com/video/90937067" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe src="http://player.vimeo.com/video/93074326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+   </li>
+   <li>
+   <iframe src="http://player.vimeo.com/video/97090501" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+   </li>
+   </ul>
+    </article>
+        </div>
+    
+  <div id="photo">
+		<article id="photo">
+    <h2>Photography</h2>
+	<p>Below are photos I have taken for North by Northwestern, as well as in my free time.  I have also worked as a photographer for <a href="http://www.ahpd.org/"><u>Arlington Heights Park District</u></a>.  While most of the photos I have taken will be used for the park district's advertising and program guide, some photos were posted online.  Check out photos of <a href="https://www.facebook.com/media/set/?set=a.10152631723847866.1073741831.111497087865&type=1" target="_blank"><u>Arlington Heights' Farmers Market</u></a> and the <a href="https://www.facebook.com/media/set/?set=a.10152669590497866.1073741832.111497087865&type=1" target="_blank"><u>Arlington Amateur Golf Tournament</u></a>.</p>
+	 
+	 	     <h4>The view from up there</h4>
+    <p>As Photo Editor of North by Northwestern, I organized, led and contributed to this section project, featuring the views from the tops of various buildings at Northwestern.  This was published in Fall 2014 and uses JuxtaposeJS and MapBox.</p>
+    <a href="http://www.northbynorthwestern.com/story/hows-the-view-from-up-there/" target="_blank"><img src="view.png"></a>
+    	 	     <h4>Campus Activism at NU</h4>
+    <p>As Photo Editor of North by Northwestern, I organized, led and contributed to this section project, featuring various campus activists at Northwestern and why they fight for the cause they fight for.  This was published in Winter 2015 and had positive reception from various social justice and activism groups at Northwestern.</p>
+    <a href="http://apps.northbynorthwestern.com/campus-activism/" target="_blank"><img src="proxy.png"></a>
+            <br>
+	 <h4>People</h4>
+	<embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051684706861593297%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	 <h4>Devon Avenue</h4>
+	 <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6098287231058985185%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	 <h4>Musical Performance</h4>
+  <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051687854537117457%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	 <h4>Architecture</h4>
+	<embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051687551864509089%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+  <h4>Nature</h4>
+  <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051690872492782097%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
+	</article>
+    </div>
+    
+
+</body>
+</html>
