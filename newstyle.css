@@ -13,6 +13,7 @@ font-family: 'Cantarell', sans-serif;
 li {
     color:white;
     list-style-type: none;
+    font-size:20px;
 }
 
 li:hover {
@@ -38,10 +39,19 @@ article {
 }
 
 h1 {
-    padding-top: 150px;
+    margin-top: 150px;
     font-size: 72px;
     text-align:center;
-    border-bottom: 3px limegreen solid;
+}
+
+h3 {
+    text-align:center;
+    font-size:30px;
+    margin-top:-60px;
+    color: limegreen;
+    padding-bottom:15px;
+        border-bottom: 3px white dashed;
+
 }
 
 nav {
