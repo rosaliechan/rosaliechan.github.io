@@ -22,6 +22,10 @@ li:hover {
     color: limegreen;
 }
 
+a:hover {
+    color:white;
+}
+
 article {
     display:none;
 }
