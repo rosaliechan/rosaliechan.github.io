@@ -65,3 +65,7 @@ nav {
 a, h2 {
     color: limegreen;
 }
+
+img:hover {
+    opacity:0.75;
+}
