@@ -1,202 +1,288 @@
 <html>
 <head>
 <link rel="stylesheet" href="newstyle.css">
-    <link href='https://fonts.googleapis.com/css?family=Cantarell:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+    <script src="smooth.js"></script>
+    
     <script>
-$(document).ready(function() {
+    $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 190) {
+    $('nav').fadeIn();
+  } else {
+    $('nav').fadeOut();
+  }
+});</script>
 
-var $articles = $('article');
-
-$('li').click(function(e) {
-	var $clickedItem = $(e.target);
-	var articleID = $clickedItem.data('article');
-
-	for (i = 0; i < $articles.length; i++) {
-		var a = $($articles[i]);
-		a.css({'display': 'none'});
-	if (a.attr('id') == articleID) {
-		a.css({'display': 'block'});
-
-	}
-}
-
-
-});
-});
-</script>
 </head>
-
 <body>
-    <h1>Rosalie Marian Chan</h1>
-<h3>journalist + programmer = storyteller</h3>
-    	<nav class="navigation">
-			<center>
+     <header>
+	<nav class="navigation">
 		<ul>
-<li data-article="about"> : About : </li>
-<li data-article="writing"> : Writing : </li>
-<li data-article="code"> : Code : </li>
-<li data-article="video"> : Video : </li>
-<li data-article="photo"> : Photography : </li>
+            <li><a href="index.html" title="">Home</a></li> 
+            <li><a href="#about" accesskey="1" title="">About</a></li> 
+            <li><a href="#apps" accesskey="2" title="">Apps &amp; Design</a></li>
+            <li><a href="#writing" accesskey="3" title="">Writing</a></li>
+            <li><a href="#talks" accesskey="4" title="">Talks</a></li>
+<!--            <li><a href="#multimedia" accesskey="5" title="">Multimedia</a></li>-->
+            <li><a href="http://tinyletter.com/truecolors" target="_blank"  title="">Newsletter</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="resume.html#contact" accesskey="5" title="">Contact</a></li>
+            
 		</ul>
-</center>
 	</nav>
+    <h1>Rosalie Chan <span style="font-size:30px; float:right; padding-right:5%;padding-top:3%;">data, writing, UX</span></h1>
+            </header>
+
     
-    <div id="about">
-		<article id="about">
+    <a name="about"></a>
 			<h2>About Me</h2>
-		<p>Hello!  My name is Rosalie, and I am a journalism and computer science student at Northwestern University.  I have been involved in journalism since high school and have written, edited and produced multimedia content for various publications.  I am especially interested in the intersection of journalism and technology, notably online, multimedia and interactive journalism.  My goals include learning more about computer science and how to tell stories in more dynamic ways.  I believe every person has a story, and I am especially interested in reporting on diversity, race, education, immigration, and Asian and Latino issues.
-    In my free time, I experiment with photography and code.  I coded this website out of scratch.  Other than that, I love cats, books, running, card games, updating my endless Spotify playlists and the city of Chicago.  You can view my resume <a href="resume.pdf" ><u>here</u></a> and/or <a href="mailto:rosaliechan2017@u.northwestern.edu" ><u>shoot me an email</u></a>.</p>
-	</article>
-    </div>
+    <img src="https://pbs.twimg.com/profile_images/770999225567981568/M4TC2629.jpg" style="float:left;width:20%;height:auto;padding-left:5%;padding-right:2%;padding-bottom:5%;">
+    <div style="height:3%;"></div>
+    <p>Hello! My name is Rosalie, and I am a journalism and computer science student at Northwestern University.  I'm especially interested in data storytelling, investigative journalism, reporting on race, product development and UX.  My work has been published in TIME, The Chicago Reporter, Narratively, Mochi Magazine, Jiemian News, the China Post, the Taipei Times and E The Magazine For Today's Female Executive.  </p>
+        <p>Currently, I am a student fellow at <a href="http://knightlab.com/" target="_blank">Northwestern University's Knight Lab,</a> a lab that explores the innovation of journalism and technology and builds a community for students who want to learn more about code.  At the lab, I have conducted data analysis on Knight Lab products, as well as product research, UX iteration and web development for new Knight Lab tools.</p>
+    <p>I am also fluent in Mandarin Chinese.  I spent last summer in Taiwan conducting research on Hakka youth cultural identity, and I spent last fall in an intensive Chinese language program at Beijing Foreign Studies University. </p>
+    <p>In my free time, I experiment with photography and code.  Other than that, I love cats, books, running, card games, newsletters, podcasts and the city of Chicago. Finally, I am a passionate advocate for diversity in media and tech, and I run a newsletter highlighting long form stories by women of color.  You can subscribe <a href="http://tinyletter.com/truecolors" target="_blank">here.</a></p>
     
-    <div id="writing">
-		<article id="writing">
-   <h2>Writing</h2>
-<ul>
-<h4><u>Topic: Race and Identity</u></h4>
-<p><a href="http://narrative.ly/super-subcultures/how-to-save-an-ancient-language-before-it-disappears-forever/"  >How To Save An Ancient Language Before It Disappears Forever</a></p>
-<p><a href="http://apps.northbynorthwestern.com/hungry/wrapup/"  >Next Steps: The Future of Asian American Studies at Northwestern</a></p> 
-<p><a href="http://www.northbynorthwestern.com/story/intersectionality/" >Intersectionality sheds new light on sexual assault</a></p>   
-<p><a href="http://www.chicagoreporter.com/tcr-talks-economics-black-power#.VKGDvcAClA"  >TCR Talks: The economics of black power</a></p>
-<p><a href="http://chicagoreporter.com/tcr-talks-challenging-stereotypes-about-asian-americans#.U_wWPrxdWd4"  >TCR Talks: Challenging stereotypes about Asian Americans</a></p>
-<p><a href="http://chicagoreporter.com/display-funky-fun-side-civil-rights-movement#.U_wWQrxdWd4"  >On display: A funky, fun side of the Civil Rights Movement</a></p>
-    </ul>   
-    <br>
-<ul>  
-<h4><u>Topic: Economic Inequality</u></h4>
-<p><a href="http://www.chicagoreporter.com/internet-reforms-could-limit-low-income-consumers-%E2%80%98slow-lane%E2%80%99#.VKGDusAClA"  >Internet reforms could limit low-income consumers to 'slow lane'</a></p>
-<p><a href="http://chicagoreporter.com/moratorium-sro-conversion-while-long-term-solution-crafted#.U_wWRbxdWd4"  >Moratorium on SRO conversion while long-term solution is crafted</a></p>
- </ul> 
-<br>
-<ul>
-<h4><u>Topic: Religion</u></h4>
-<p><a href="http://apps.northbynorthwestern.com/magazine/2015/winter/seeking-faith/"  >Seeking Faith</a></p>
-<p><a href="http://www.nuasianmag.com/?p=1543"  >School of Faith</a></p>
-    </ul>
- <br>
-<ul>
-<h4><u>Other Features</u></h4> 
-<p><a href="http://www.mochimag.com/article/a-life-of-risk-foreign-correspondent-amna-nawaz"  >A Life of Risk</a></p>
-<p><a href="http://www.northbynorthwestern.com/story/food-trucks-come-to-lakefill-for-dillo-day-distrac/"  >Food trucks come to lakefill for Dillo Day distraction</a></p>
-    <p><a href="http://www.northbynorthwestern.com/story/the-kids-are-all-wrong-brings-improv-quirk-to-nu-c/"  >'The Kids Are All Wrong' brings improv, quirk to NU Channel 1</a></p>
-<p><a href="http://www.northbynorthwestern.com/story/when-gay-men-cant-donate/"  >When gay men can't donate</a></p>
-</ul>
-  <br>  
-<ul>
-<h4><u>Personal Essays</u></h4> 
-<p><a href="http://www.northbynorthwestern.com/story/why-i/"  >Why I Listen</a></p>
-</ul>
-	</article>
-    </div>
     
-    <div id="code">
-    <article id="code">
+    <a name="apps"></a>
+    <div style="height:10%;"></div>
         <h2>Code</h2>
-      	<h4><a href="http://www.northbynorthwestern.com/" >North by Northwestern</a></h4>
-   	<ul>
-   	<p><a href="http://www.northbynorthwestern.com/story/a-day-on-a-film-set/" ><img src="rtvf.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/hungry/timeline/" ><img src="timeline.png"></a></p>
-   	<p><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" ><img src="madlibs.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/march-madness/" ><img src="bball.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/zaramela/" ><img src="band.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/toby-jugs/" ><img src="jugs.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/nu-divest/" ><img src="divest.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/homeless/" ><img src="homeless.png"></a></p>
-   	<p><a href="http://www.northbynorthwestern.com/story/ask-me-about/" ><img src="ask.png"></a></p>
-   	<p><a href="http://apps.northbynorthwestern.com/submerged/" ><img src="submerged.png"></a></p>
-	</ul>
-	
-	<h4><a href="http://www.mochimag.com/" >Mochi Magazine</a></h4>
-	<ul>
-	<p><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" ><img src="mochi.png"></a></p>
-	</ul>
-	
-	<h4>Innovation in Journalism and Technology</h4>
-		<ul>
-	<p><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" ><img src="wiki.png"></a></p>
-	</ul>
-    </article>
-        </div>
+                                        <div class="projectboxtalks">
+            <div class="projectboximg"><img src="img/storyline.png" class="talks"></div>
+                <div class="projectboxdes"><h4><u>StoryLineJS</u></h4>
+        <p>Description to come</p>
+    </div>
+            </div>
+          <br>
+               <br>
     
-    <div id="video">
-    <article id="video">
-        <h2>Video</h2>
- 	 <h4><a href="http://www.northbynorthwestern.com/" >North by Northwestern</a></h4>
-   <ul>
-	<p>
-   <iframe src="http://player.vimeo.com/video/93101544" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   <p>
-   <iframe src="http://player.vimeo.com/video/95301612" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe src="http://player.vimeo.com/video/96841624" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   </p>
-   <p>
-	<iframe src="http://player.vimeo.com/video/112014733" width="500" height="281" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   </p>
-   </ul>
-   <h4>Enterprise Reporting in Diverse Communities</h4>
-   <ul>
-   <p>
-   <iframe width="500" height="281" src="http://www.youtube.com/embed/Eg_3Hnca3Yg" frameborder="0" allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe width="500" height="281" src="http://www.youtube.com/embed/pJgfuC4T5Pg" frameborder="0" allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe width="500" height="281" src="http://www.youtube.com/embed/2PMOKIGFzRc" frameborder="0" allowfullscreen></iframe>
-   </p>
-   </ul>
-   <h4>Multimedia Journalism</h4>
-   <ul>
-   <p>
-   <iframe width="500" height="281" src="http://www.youtube.com/embed/eALXeOZ4Y5g" frameborder="0" allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe width="500" height="281" src="http://www.youtube.com/embed/3MVAoNt96n4" frameborder="0" allowfullscreen></iframe>
-   <p>
-   </ul>
-   <h4>Video Art</h4>
-   <ul>
-   <p>
-   <iframe src="http://player.vimeo.com/video/90937067" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe src="http://player.vimeo.com/video/93074326" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-   </p>
-   <p>
-   <iframe src="http://player.vimeo.com/video/97090501" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
-   </p>
-   </ul>
-    </article>
-        </div>
+ <div class="projectboxtalks">
+    <div class="projectboximg"><a href="http://eecs394-s16.github.io/eRetirements/" target="_blank"><img src="img/eretirements.png" class="talks"></a></div>
+     <div class="projectboxdes"><h4><u><a href="http://eecs394-s16.github.io/eRetirements/" target="_blank">eRetirements</a></u></h4>
+    <p>Description to come</p>
+                    
+    </div>
+            </div>
+          <br><br>
+  <div class="projectboxtalks">
+            <div class="projectboximg"><img src="img/geovibes.png" class="talks"></div>
+                <div class="projectboxdes"><h4><u>GeoVibes</u></h4>
+        <p>Description to come</p>
+    </div>
+            </div>
+          <br><br>
+      <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.eecs.northwestern.edu/wic/" target="_blank"><img src="img/wic.png" class="talks"></a></div>
+          <div class="projectboxdes"><h4><u><a href="http://www.eecs.northwestern.edu/wic/" target="_blank">Women In Computing Website</a></u></h4>
+       <p>Description to come</p>
+    </div>
+            </div>
+    <br><br>
+          <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://rude.herokuapp.com/" target="_blank"><img src="img/rude.png" class="talks"></a></div>
+              <div class="projectboxdes"><h4><u><a href="http://rude.herokuapp.com/" target="_blank">Rude!</a></u></h4>
+       <p>Description to come</p>
+    </div>
+            </div>
+    <br><br>
+ <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/submerged/" target="_blank"><img src="img/submerged.png" class="talks"></a></div>
+                <div class="projectboxdes"><h4><u><a href="http://apps.northbynorthwestern.com/submerged/" target="_blank">Submerged</a></u></h4>
+                    <p>Description to come</p>
+    </div>
+            </div>
+    <br><br>
+ <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/homeless/" target="_blank"><img src="img/homeless.png" class="talks"></a></div>
+                <div class="projectboxdes"><h4><u><a href="http://apps.northbynorthwestern.com/homeless/" target="_blank">Graduated and Homeless</a></u></h4>
+                    <p>Description to come</p>
+    </div>
+            </div>
+    <br><br>
+  <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/index/" target="_blank"><img src="img/bball.png" class="talks"></a></div>
+                <div class="projectboxdes">
+                    <h4><u><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/index/" target="_blank">North by Northwestern Magazine</a></u></h4>
+                    <p> <a href="http://apps.northbynorthwestern.com/magazine/2015/spring/march-madness/" >link</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/zaramela/" >link</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/toby-jugs/" >link</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/nu-divest/" >link</a></p>
+    </div>
+            </div>
+    <br><br>
+     <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank"><img src="img/madlibs.png" class="talks"></a></div>
+         <div class="projectboxdes"><h4><u><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank">Mad Libs Northwestern Edition</a></u></h4>
+                    <p>Description to come</p>
+    </div>
+            </div>
+    <br><br>
+         <div class="projectboxtalks">
+            <div class="projectboximg"><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank"><img src="img/wiki.png" class="talks"></a></div>
+             <div class="projectboxdes"><h4><u><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank">Wiki Studio</a></u></h4>
+                    <p>Description to come</p>
+    </div>
+            </div>
+             
+    <br><br>
+         <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank"><img src="img/mochi.png" class="talks"></a></div>
+             <div class="projectboxdes"><h4><u><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank">Mochi's 25 Hottest Asian American Men Worth Watching</a></u></h4>
+                    <p>Description to come</p>
+    </div>
+            </div>
     
-  <div id="photo">
-		<article id="photo">
-    <h2>Photography</h2>
-	<p>Below are photos I have taken for North by Northwestern, as well as in my free time.  I have also worked as a photographer for <a href="http://www.ahpd.org/"><u>Arlington Heights Park District</u></a>.  While most of the photos I have taken will be used for the park district's advertising and program guide, some photos were posted online.  Check out photos of <a href="https://www.facebook.com/media/set/?set=a.10152631723847866.1073741831.111497087865&type=1" ><u>Arlington Heights' Farmers Market</u></a> and the <a href="https://www.facebook.com/media/set/?set=a.10152669590497866.1073741832.111497087865&type=1" ><u>Arlington Amateur Golf Tournament</u></a>.</p>
-	 
-	 	     <h4>The view from up there</h4>
-    <p>As Photo Editor of North by Northwestern, I organized, led and contributed to this section project, featuring the views from the tops of various buildings at Northwestern.  This was published in Fall 2014 and uses JuxtaposeJS and MapBox.</p>
-    <a href="http://www.northbynorthwestern.com/story/hows-the-view-from-up-there/" ><img src="view.png"></a>
-    	 	     <h4>Campus Activism at NU</h4>
-    <p>As Photo Editor of North by Northwestern, I organized, led and contributed to this section project, featuring various campus activists at Northwestern and why they fight for the cause they fight for.  This was published in Winter 2015 and had positive reception from various social justice and activism groups at Northwestern.</p>
-    <a href="http://apps.northbynorthwestern.com/campus-activism/" ><img src="proxy.png"></a>
-            <br>
-	 <h4>People</h4>
-	<embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051684706861593297%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-	 <h4>Devon Avenue</h4>
-	 <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6098287231058985185%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-	 <h4>Musical Performance</h4>
-  <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051687854537117457%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-	 <h4>Architecture</h4>
-	<embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051687551864509089%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-  <h4>Nature</h4>
-  <embed type="application/x-shockwave-flash" src="https://photos.gstatic.com/media/slideshow.swf" width="800" height="533" flashvars="host=picasaweb.google.com&hl=en_US&feat=flashalbum&RGB=0x000000&feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2F101711896139715665555%2Falbumid%2F6051690872492782097%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed>
-	</article>
+
+    
+        <a name="writing"></a>
+    <div style="height:10%;"></div>
+   <h2>Writing</h2>
+    
+                    <div class="projectbox">
+            <div class="projectboximg"><a href="http://time.com/author/rosalie-chan/" target="_blank"><img src="img/time.png"></a></div>
+                        <div class="projectboxdes"><h4><u><a href="http://time.com/author/rosalie-chan/" target="_blank">TIME</a></u></h4>
+    <p>When I interned at TIME in summer 2016, I wrote over 100 breaking news stories.  In addition, I pitched and wrote feature stories (including a long-form feature on women of color entrepreneurs) and worked on data-driven stories for TIME Labs (including d3.js infographics).  Below are some of the stories I worked on.</p>
+    <p><a href="http://time.com/4408900/latina-women-business-owner-entrepreneur/" target="_blank">Why More Women of Color Than Ever Are Starting Their Own Businesses</a></p>
+    <p><a href="http://motto.time.com/4426735/rio-2016-olympics-gymnasts-gabby-douglas-simone-biles/" target="_blank">What Gabby Douglas and Simone Biles Mean Beyond the Olympics</a></p>
+    <p><a href="http://time.com/4404229/black-lives-matter-letter-alton-sterling-philando-castile/" target="_blank">How a Group of Asian-Americans Is Spreading Support for Black Lives Matter</a></p>
+
+    <p><a href="http://time.com/4397693/minnesota-shooting-police-new-york-protests/" target="_blank">Thousands of New Yorkers Protest Police Shootings of Black Men</a></p>
+    <p><a href="http://time.com/4367710/orlando-shooting-stonewall-inn-vigil-new-york/" target="_blank">New Yorkers Mourn Orlando Shooting Victims: 'They Could've Been Us'</a></p>
+    <p><a href="http://time.com/4419455/munich-shooting-germany/" target="_blank">8 Dead in Munich Shooting</a></p>
+                    <p><a href="http://time.com/4396633/philando-castile-mark-dayton-shooting-justice-department/" target="_blank">Minnesota Governor Asks Justice Department to Investigate Philando Castile's Death</a></p>
+    <p><a href="http://time.com/mass-shootings-victims/" target="_blank">Why Did They Die?</a></p>
+    <p><a href="http://time.com/4379939/shark-week-deaths/" target="_blank">These 10 Things Are Deadlier Than Sharks</a></p></div>
+            </div>
+  
+        <br><br>
+    
+                              <div class="projectbox">
+            <div class="projectboximg"><a href="http://blog.undergradresearch.northwestern.edu/blog/rosalie/" target="_blank"><img src="img/hakka.JPG"></a></div>
+                <div class="projectboxdes"><h4><u><a href="http://blog.undergradresearch.northwestern.edu/blog/rosalie/" target="_blank">Hakka Youth Cultural Identity Research</a></u></h4> 
+    <p>In summer 2015, I received an undergraduate research grant to travel to Taiwan and report on Hakka youth cultural identity. The Hakka language and culture is currently disappearing, and I interviewed dozens of youth on their views, as well as professors and government officials, about this issue.</p>  <p>Following that summer, I pitched and wrote features for Narratively, the Taipei Times and the China Post.  My story in Narratively was also aggregated by Jiemian News, a Shanghai publication.</p>
+                    <p>In June 2016, I presented my research at Northwestern's 2016 Undergraduate Research &amp; Arts Exposition.  You can read more about it <a href="#talks">here.</a></p>
+                    <p>Below are my stories that were published.</p>
+<p><a href="http://narrative.ly/super-subcultures/how-to-save-an-ancient-language-before-it-disappears-forever/"  target="_blank">How To Save An Ancient Language Before It Disappears Forever</a></p>
+    <p><a href="http://www.taipeitimes.com/News/feat/archives/2016/01/25/2003637997"  target="_blank">Demographic shift spells language decline</a></p>
+    <p><a href="http://www.chinapost.com.tw/taiwan/national/national-news/2016/02/16/458442/Youth-find.htm"  target="_blank">Youth find ways to reclaim Hakka identity</a></p>
+                            </div>
     </div>
     
+
+        <br><br>
+    
+                                  <div class="projectbox">
+            <div class="projectboximg"><a href="http://chicagoreporter.com/author/rosalie-chan/" target="_blank"><img src="img/tcr.jpg"></a></div>
+                <div class="projectboxdes">    
+                    <h4><u><a href="http://chicagoreporter.com/author/rosalie-chan/" target="_blank">The Chicago Reporter</a></u></h4>
+                     <p>The summer after my freshman year, I interned at The Chicago Reporter, a publication focusing on race and poverty in Chicago.  I covered housing issues at City Council and regularly wrote Q&amp;A profiles about activists and grassroots leaders in Chicago.  I also wrote features and breaking news, and I assisted reporter Angela Caputo in analyzing data for her <a href="http://chicagoreporter.com/leveling-playing-field/">investigation on park funding.</a> Below are some stories I wrote.</p>
+    <p><a href="http://www.chicagoreporter.com/internet-reforms-could-limit-low-income-consumers-%E2%80%98slow-lane%E2%80%99#.VKGDusAClA"    target="_blank" >Internet reforms could limit low-income consumers to 'slow lane'</a></p>
+    <p><a href="http://chicagoreporter.com/display-funky-fun-side-civil-rights-movement#.U_wWQrxdWd4"   target="_blank">On display: A funky, fun side of the Civil Rights Movement</a></p>
+    <p><a href="http://chicagoreporter.com/moratorium-sro-conversion-while-long-term-solution-crafted#.U_wWRbxdWd4"     target="_blank">Moratorium on SRO conversion while long-term solution is crafted</a></p>
+        <p><a href="http://chicagoreporter.com/tcr-talks-economics-black-power/"    target="_blank" >TCR Talks: The economics of black power</a></p>
+        <p><a href="http://chicagoreporter.com/tcr-talks-challenging-stereotypes-about-asian-americans/"  target="_blank" >TCR Talks: Challenging stereotypes about Asian Americans</a></p>
+                    <p><a href="http://chicagoreporter.com/less-time-less-crime-according-one-study-yes/"  target="_blank" >Less time, less crime? According to one study, yes</a></p>
+                    <p><a href="http://chicagoreporter.com/illinois-eliminates-criminal-history-question-job-applications/"  target="_blank" >Illinois eliminates criminal-history question from job applications</a></p>
+                    <p><a href="http://chicagoreporter.com/illinois-voters-have-say-minimum-wage-november/"  target="_blank" >Illinois voters have say on minimum wage in November</a></p>
+                            </div>
+    </div>
+    
+    
+    <br><br>
+    
+                <div class="projectbox">
+            <div class="projectboximg"><a href="http://www.northbynorthwestern.com/author/rosaliechan/" target="_blank"><img src="img/nbn.jpg"></a></div>
+                <div class="projectboxdes">
+                    <h4><u><a href="http://www.northbynorthwestern.com/author/rosaliechan/" target="_blank">North by Northwestern</a></u></h4>   
+                     <p>I have been part of Northwestern's online campus magazine all throughout college. I've served as various positions on the online, print and corporate staff.  Currently, I serve as a Senior Section Editor for the print magazine.  Below are some of the stories I've written.</p>
+    <p><a href="http://apps.northbynorthwestern.com/magazine/2016/spring/quad/technical-difficulties/"  target="_blank">Technical Difficulties</a></p> 
+                     <p><a href="http://www.northbynorthwestern.com/story/gravitational-waves-explained/"  target="_blank">Gravitational waves, explained</a></p> 
+                    <p><a href="http://www.northbynorthwestern.com/story/sodexo-workers-allege-mistreatment-demand-longer-h/"  target="_blank">Sodexo workers allege mistreatment, demand longer hours in negotiations</a></p> 
+<p><a href="http://apps.northbynorthwestern.com/hungry/wrapup/"  target="_blank">Next Steps: The Future of Asian American Studies at Northwestern</a></p> 
+    <p><a href="http://apps.northbynorthwestern.com/magazine/2015/winter/seeking-faith/"    target="_blank">Seeking Faith</a></p>
+    <p><a href="http://www.northbynorthwestern.com/story/why-i/"  >Why I Listen</a></p>
+<p><a href="http://www.northbynorthwestern.com/story/intersectionality/" target="_blank" >Intersectionality sheds new light on sexual assault</a></p>
+    <p><a href="http://www.northbynorthwestern.com/story/food-trucks-come-to-lakefill-for-dillo-day-distrac/"   target="_blank">Food trucks come to lakefill for Dillo Day distraction</a></p>
+<p><a href="http://www.northbynorthwestern.com/story/when-gay-men-cant-donate/"   target="_blank">When gay men can't donate</a></p></div>
+            </div>
+    
+    <br><br>
+    
+                          <div class="projectbox">
+            <div class="projectboximg"><a href="http://www.medilljusticeproject.org/" target="_blank"><img src="img/mjp.jpg"></a></div>
+                <div class="projectboxdes"><h4><u>Other</u></h4>
+
+                    <p><strong>Medill Justice Project</strong></p>
+                    <p>In spring 2016, I investigated a quadruple murder case in Florida with nine other students.  We were looking into the potential wrongful conviction of Tommy Ziegler, who was sentenced to death in 1976 for killing four people in his furniture store on Christmas Eve.  We interviewed witnesses, lawyers and experts, obtained and analyzed court and medical records and traveled to Florida to report.  <a href="http://www.medilljusticeproject.org/2016/06/13/death-denied-3/" target="_blank">Read our investigation here.</a></p>
+            <p><strong>E The Magazine for Today's Female Executive</strong></p>
+            <p><a href="https://issuu.com/nafelosangeles/docs/e_magazine_ag-2016_volume_26__ver_1/c/sm3knod"  target="_blank">Women In Computing Take On Summer Internships and Learn New Skills</a></p>
+                    <p><strong>Mochi Magazine</strong></p>
+                    <p><a href="http://www.mochimag.com/article/meet-lindy-li-americas-youngest-ever-congressional-candidate"   target="_blank" >Meet Lindy Li, America's Youngest Ever Congressional Candidate</a></p>
+                    <p><a href="http://www.mochimag.com/article/a-life-of-risk-foreign-correspondent-amna-nawaz"   target="_blank" >A Life of Risk: How Foreign Correspondent Amna Nawaz Became a Champion for Asian American Issues</a></p>
+            <p><strong>NU Asian</strong></p>
+            <p><a href="https://nuasian.wordpress.com/2014/04/16/print-magazine-school-of-faith/" target="_blank">School of Faith</a></p>
+                            </div>
+    </div>
+    
+    <a name="talks"></a>
+    <div style="height:10%;"></div>
+      <h2>Talks</h2>
+    
+        <div class="projectboxtalks">
+            <div class="projectboximg"><a href="https://slides.com/rosaliechan/deck-2/live#/" target="_blank"><img src="img/hakka.png" class="talks"></a></div>
+                                         <div class="projectboxdes"><h4><u><a href="https://slides.com/rosaliechan/deck-2/live#/" target="_blank">Hakka Youth Cultural Identity in Taiwan</a></u></h4>
+        <p>In June 2016, I presented at Northwestern's 2016 Undergraduate Research &amp; Arts Exposition.  I spoke about the research I conducted in Taiwan in summer 2015, where I interviewed dozens of youth and other people about the declining Hakka language and culture.</p>  
+                    <p>In this presentation, I explained the history of the Hakkas in Taiwan, why I conducted this research and the generation gap between the Hakka elderly and youth on Hakka language ability. </p>
+                    <p>I also presented three case studies of people I interviewed: a recent college graduate who actively promotes the Hakka language on social media, a radio DJ who learned the Hakka language after college and now runs a Hakka language program, and a 90-year-old Hakka man who grew up during the Japanese occupation and wrote a Hakka dictionary after retiring from a long career in education.</p>
+                    <p>You can view the presentation <a href="https://slides.com/rosaliechan/deck-2/live#/" target="_blank">here.</a></p>
+    </div>
+            </div>
+          <br><br>
+               
+    
+ <div class="projectboxtalks">
+    <div class="projectboximg"><a href="https://slides.com/rosaliechan/deck/live#/" target="_blank"><img src="img/graphics.png" class="talks"></a></div>
+     <div class="projectboxdes"><h4><u><a href="https://slides.com/rosaliechan/deck/live#/" target="_blank">3D Graphics in Journalism</a></u></h4>
+    <p>In Winter 2015, I took a course about computer graphics, where we created animated graphics using WebGL and OpenGL and explored three-dimensional shapes, movement, lighting and texture.  Based on the skills I learned in the course, I did research on how animated graphics are used in journalism and presented this talk at the Knight Lab's Open Lab, where students can gather to work on projects and learn to code.  </p>
+        <p>In this talk, I showed examples of how animated graphics are used in journalism and WebGL projects.  I also explained how students can get started in learning how to create graphics by using canvas and HTML5.</p>
+        <p>You can view the presentation <a href="https://slides.com/rosaliechan/deck/live#/" target="_blank">here.</a></p>
+                    
+    </div>
+            </div>
+          <br><br>
+                             <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://slides.com/dittybhandari/thoughts-about-the-iot/fullscreen#/" target="_blank"><img src="img/iot.png" class="talks"></a></div>
+                                 <div class="projectboxdes"><h4><u><a href="http://slides.com/dittybhandari/thoughts-about-the-iot/fullscreen#/" target="_blank">Ways to Think About the Internet of Things</a></u></h4>
+        <p>In spring 2016, I attended "Hack the Gender Gap: A Women's IoT Makeathon" at West Virginia University, along with two other Northwestern students.  At this Makeathon, which is hosted by MediaShift, we were presented with a challenge to come up with an idea for an Internet of Things product and design a business plan.</p>
+                    <p>After returning from the Makeathon, we presented what we learned at Knight Lab's Open Lab.  We explained what the definition of the Internet of Things and talked about the projects we came up with.</p>
+                     <p>You can view the presentation <a href="http://slides.com/dittybhandari/thoughts-about-the-iot/fullscreen#/" target="_blank">here.</a></p>
+    </div>
+            </div>
+          <br><br>
+      <div class="projectboxtalks">
+            <div class="projectboximg"><a href="https://slides.com/rosaliechan/5-things-i-learned-from-starting-a-newsletter/live#/" target="_blank"><img src="img/newsletter.png" class="talks"></a></div>
+          <div class="projectboxdes"><h4><u><a href="https://slides.com/rosaliechan/5-things-i-learned-from-starting-a-newsletter/live#/" target="_blank">5 Things I Learned From Starting a Newsletter</a></u></h4>
+       <p>In February 2016, I created a newsletter that highlights long reads and multimedia work by women of color. I wanted to start a newsletter because 2016 has been named "the year of the newsletter," but more importantly, because the media industry lacks diversity, and women of color have fewer opportunities to take senior positions in the newsroom and write long-form features.  Because of this, I wanted to highlight the great work women of color are doing in the media industry.</p> 
+    <p>At the Knight Lab's Open Lab, I gave this presentation on what I learned from starting a newsletter, and I also shared some of my personal favorite newsletters.  For me, the biggest challenge in starting a newsletter is growth.  Currently, I promote my newsletter on four different social media channels.</p>
+                    <p>You can subscribe to my newsletter<a href="http://tinyletter.com/truecolors" target="_blank">here</a> and view the presentation <a href="https://slides.com/rosaliechan/5-things-i-learned-from-starting-a-newsletter/live#/" target="_blank">here.</a></p>
+    </div>
+            </div>
+          <br><br>
+                       <div class="projectboxtalks">
+            <div class="projectboximg"><a href="https://docs.google.com/presentation/d/1QVwZgXd3qvmhnWowXS-o289Hs4Bf2gWziq8dPhvGD_g/edit?usp=sharing" target="_blank"><img src="img/foodo.png" class="talks"></a></div>
+                           <div class="projectboxdes"><h4><u><a href="https://docs.google.com/presentation/d/1QVwZgXd3qvmhnWowXS-o289Hs4Bf2gWziq8dPhvGD_g/edit?usp=sharing" target="_blank">Foodo</a></u></h4>
+                    <p>In winter 2016, I took a course on human-computer interaction, where we had to prototype, user test and design an app that would increase civic engagement.</p>
+        <p>My group came up with Foodo, an app that allows users to track their eating and grocery shopping habits and reduce food waste by figuring out how much food they should actually buy.  Furthermore, the user would have the option to donate the money they saved to an organization that addresses world hunger.</p>
+        <p>In order to design this website, we had to brainstorm ideas, interview and observe people on their grocery shopping and eating habits, come up with representative tasks and create paper and web protoypes for this app.  Ideally, this app could target people of all ages who grocery shop for themselves or their families.</p>
+                    <p>You can view the presentation and web prototype <a href="https://docs.google.com/presentation/d/1QVwZgXd3qvmhnWowXS-o289Hs4Bf2gWziq8dPhvGD_g/edit?usp=sharing" target="_blank">here.</a></p>
+    </div>
+            </div>
+    
+ <div style="height:10%;"></div>
+    
+<footer>&copy; Rosalie Chan 2016</footer>
 
 </body>
 </html>
