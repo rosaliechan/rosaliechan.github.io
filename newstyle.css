@@ -30,12 +30,10 @@ font-family: 'Quattrocento Sans', sans-serif;
     }
     
         header {
-        margin-top: -20%;
         height:auto;
-            padding-bottom:1%;
+        padding-bottom:1%;
     }
 }
-
 
 p {
     margin-left: 5%;
@@ -128,7 +126,7 @@ h4 {
 }
 
 
-@media screen and (min-width:740px) {
+@media screen and (min-width:1400px) {
     
 .projectbox {
     width:90%;
