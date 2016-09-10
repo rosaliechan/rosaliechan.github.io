@@ -4,6 +4,43 @@ color:black;
 font-family: 'Quattrocento Sans', sans-serif;
 }
 
+@media screen and (max-width:739px) {
+
+.projectbox {
+    width:90%;
+    background-color: white;
+    box-shadow: 3px 3px 3px lightgray;
+    margin-left:5%;
+    padding-bottom: 1%;
+    }
+    
+    .projectboxtalks {
+    width:90%;
+    background-color: white;
+    box-shadow: 3px 3px 3px lightgray;
+    margin-left:5%;
+    padding-bottom: 1%;
+}
+    .projectboximg {
+        height:50%;
+    }
+    
+    .projectboximgstory {
+        height:75%;
+    }
+    
+    nav {
+        margin-top:-3%;
+    }
+    
+        header {
+        margin-top: -8%;
+        height:auto;
+            padding-bottom:1%;
+    }
+}
+
+
 p {
     margin-left: 5%;
     margin-right:5%;
@@ -11,7 +48,6 @@ p {
 
 header {
     background-color: mediumvioletred;
-    margin-top:-5%;
     margin-left:-1%;
     margin-right:-1%;
 }
@@ -54,13 +90,6 @@ a {
     text-decoration: none;
 }
 
-.contact {
-    position:relative;
-    width:100px;
-    height:100px;
-}
-
-
 h1 {
     font-size: 80px;
     padding:5%;
@@ -85,6 +114,10 @@ h4 {
     padding-left:5%;
     font-size:18px;
 }
+
+
+@media screen and (min-width:740px) {
+    
 .projectbox {
     width:90%;
     height:70%;
@@ -100,29 +133,40 @@ h4 {
     margin-left:5%;
 }
 
-.talks {
-    width:100%;
-    height:100%
-}
-
-.projectboximg {
+.projectboximg, .projectboximgstory {
     width:35%;
     float:left;
 }
+    
 .projectboxdes {
     width:65%;
     float:right;
+    
+}
+    
+    .talks {
+    width:100%;
+    height:100%
+}
+    
+    nav {
+        padding-left: 3%;
+    }
+    
+    header {
+        margin-top: -5%;
+    }
+    
 }
 
 nav {
    position:fixed;
     background-color: mediumvioletred;
     width:101%;
-    padding-left:3%;
     padding-top:1%;
-    display:none;
     box-shadow: 2px 2px 2px #888888;
     z-index: 999;
+    display:none;
 }
 
 h2 {
