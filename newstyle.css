@@ -4,7 +4,7 @@ color:black;
 font-family: 'Quattrocento Sans', sans-serif;
 }
 
-@media screen and (max-width:740px) {
+@media screen and (max-width:765px) {
 
 .projectbox {
     width:90%;
@@ -36,7 +36,10 @@ font-family: 'Quattrocento Sans', sans-serif;
 }
 
 
-
+div {
+    position:relative;
+    overflow: auto;
+}
 
 p {
     margin-left: 5%;
@@ -129,21 +132,21 @@ h4 {
 }
 
 
-@media screen and (min-width:740px) {
+@media screen and (min-width:765px) {
     
 .projectbox {
-    width:90%;
     height:70%;
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
     margin-left:5%;
+    margin-right:5%;
 }
 .projectboxtalks {
-    width:90%;
     height:50%;
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
     margin-left:5%;
+    margin-right:5%;
 }
 
 .projectboximg, .projectboximgstory {
@@ -154,8 +157,7 @@ h4 {
 .projectboxdes {
     width:65%;
     float:right;
-    
-}
+ }
     
     .talks {
     width:100%;
