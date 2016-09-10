@@ -78,7 +78,7 @@ h3 {
 
 img {
     width:100%;
-    height:450px;
+    height: 100%;
 }
 
 h4 {
@@ -87,14 +87,14 @@ h4 {
 }
 .projectbox {
     width:90%;
-    height:450px;
+    height:70%;
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
     margin-left:5%;
 }
 .projectboxtalks {
     width:90%;
-    height:320px;
+    height:50%;
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
     margin-left:5%;
@@ -102,7 +102,7 @@ h4 {
 
 .talks {
     width:100%;
-    height:320px;
+    height:100%
 }
 
 .projectboximg {
