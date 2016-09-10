@@ -40,6 +40,41 @@ font-family: 'Quattrocento Sans', sans-serif;
     }
 }
 
+@media handheld and (max-width:739px) {
+
+.projectbox {
+    width:90%;
+    background-color: white;
+    box-shadow: 3px 3px 3px lightgray;
+    margin-left:5%;
+    padding-bottom: 1%;
+    }
+    
+    .projectboxtalks {
+    width:90%;
+    background-color: white;
+    box-shadow: 3px 3px 3px lightgray;
+    margin-left:5%;
+    padding-bottom: 1%;
+}
+    .projectboximg {
+        height:50%;
+    }
+    
+    .projectboximgstory {
+        height:75%;
+    }
+    
+    nav {
+        margin-top:-3%;
+    }
+    
+        header {
+        margin-top: -8%;
+        height:auto;
+            padding-bottom:1%;
+    }
+}
 
 p {
     margin-left: 5%;
