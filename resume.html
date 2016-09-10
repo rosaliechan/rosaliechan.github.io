@@ -1,10 +1,10 @@
 <html>
-    <head>
-    <link rel="stylesheet" href="resumestyle.css">
+<head>
+<link rel="stylesheet" href="newstyle.css" media="screen, handheld">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-        <script src="smooth.js"></script>
-          <script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>      
+    <script>
     $(document).scroll(function() {
   var y = $(this).scrollTop();
   if (y > 190) {
@@ -14,27 +14,26 @@
   }
 });</script>
 
-    </head>
+</head>
     
     <body>
       <header>
 	<nav class="navigation">
 		<ul>
             <li><a href="index.html" title="">Home</a></li> 
-            <li><a href="index.html#about" accesskey="1" title="">About</a></li> 
+            <li><a href="index.html#about" accesskey="1" title="">About &amp; Contact</a></li> 
             <li><a href="index.html#apps" accesskey="2" title="">Apps &amp; Design</a></li>
             <li><a href="index.html#writing" accesskey="3" title="">Writing</a></li>
             <li><a href="index.html#talks" accesskey="4" title="">Talks</a></li>
 <!--            <li><a href="#multimedia" accesskey="5" title="">Multimedia</a></li>-->
             <li><a href="http://tinyletter.com/truecolors" target="_blank"  title="">Newsletter</a></li>
             <li><a href="#">Resume</a></li>
-            <li><a href="#contact" accesskey="1" title="">Contact</a></li>
             
 		</ul>
 	</nav>
     <h1>Rosalie Chan <span style="font-size:30px; float:right; padding-right:5%;padding-top:3%;">data, writing, UX</span></h1>
             </header>
-        <div>
+        <div id="resumediv">
         <h4>EDUCATION</h4>
         <p><strong>Northwestern University, </strong>Evanston, IL | Expected June 2017 </p>
         <p><strong>Majors:</strong> Bachelor's Degrees in Computer Science and Journalism | <strong>GPA:</strong> 3.55/4.00</p>
