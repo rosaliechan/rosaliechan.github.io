@@ -59,6 +59,14 @@ nav ul li {
     font-size:1.2em;
 }
 
+a:hover {
+background-color:mediumvioletred;
+    color:white;
+    cursor: hand;
+    cursor: pointer;
+}
+
+
 nav li a:hover {
     cursor: pointer;
     cursor: hand;
@@ -70,17 +78,6 @@ nav li a {
     text-decoration: none;
     padding:1%;
 }
-p a:hover {
-background-color:mediumvioletred;
-    color:white;
-    cursor: hand;
-}
-
-li a:hover {
-background-color:mediumvioletred;
-    color:white;
-    cursor: hand;
-}
 
 #resumediv {
     margin-left: 10%;
@@ -91,10 +88,6 @@ ul {
     margin-left:5%;
 }
 
-h4 a:hover {
-background-color:mediumvioletred;
-    color:white;
-}
 
 p a {
     padding:0.3%
@@ -131,6 +124,13 @@ h4 {
     font-size:1.5em;
 }
 
+.projectboximg a:hover {
+    background-color: #f2f2f2;
+}
+.projectboximgstory a:hover{
+    background-color: #f2f2f2;
+}
+
 
 @media screen and (min-width:765px) {
     
@@ -142,7 +142,7 @@ h4 {
     margin-right:5%;
 }
 .projectboxtalks {
-    height:50%;
+    height:45%;
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
     margin-left:5%;
@@ -177,11 +177,12 @@ h4 {
 nav {
    position:fixed;
     background-color: mediumvioletred;
-    width:101%;
-    padding-top:1%;
+    left:0;
+    top:0;
     box-shadow: 2px 2px 2px #888888;
     z-index: 999;
     display:none;
+    width:100%;
 }
 
 h2 {
