@@ -107,6 +107,14 @@ h1 {
     color:white;
 }
 
+h1:hover {
+    color:black;
+}
+
+span:hover {
+    color: black;
+}
+
 h3 {
     font-size:2em;
     color:white;
@@ -130,7 +138,6 @@ h4 {
 .projectboximgstory a:hover{
     background-color: #f2f2f2;
 }
-
 
 @media screen and (min-width:765px) {
     
