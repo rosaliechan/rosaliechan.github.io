@@ -1,0 +1,148 @@
+<html>
+<head>
+<link rel="stylesheet" href="newstyle.css" media="screen, handheld">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+    <script src="smooth.js"></script>
+    
+    <script>
+    $(document).scroll(function() {
+  var y = $(this).scrollTop();
+  if (y > 190) {
+    $('nav').fadeIn();
+  } else {
+    $('nav').fadeOut();
+  }
+});
+    </script>
+
+</head>
+<body>
+    
+     <header>
+	<nav class="navigation">
+		<ul>
+            <li><a href="index.html" title="">Home</a></li> 
+            <li><a href="index.html#about" accesskey="1" title="">About &amp; Contact</a></li> 
+            
+            <li><a href="index.html#writing" accesskey="2" title="">Writing</a></li>
+            <li><a href="#" accesskey="3" title="">Apps &amp; Design</a></li>
+<!--            <li><a href="index.html#talks" accesskey="4" title="">Talks</a></li>-->
+<!--            <li><a href="#multimedia" accesskey="5" title="">Multimedia</a></li>-->
+            <li><a href="http://tinyletter.com/truecolors" target="_blank"  title="">Newsletter</a></li>
+<!--            <li><a href="#">Resume</a></li>-->
+            
+		</ul>
+	</nav>
+       <a href="index.html">  
+    <h1>Rosalie Chan <span style="font-size:30px; float:right; padding-right:5%;padding-top:3%;">data, writing, UX</span></h1>
+           </a>
+            </header>
+    
+      <a name="apps"></a>
+    <div style="height:10%;"></div>
+        <h2>Apps &amp; Design</h2>
+                                        <div class="projectboxtalks">
+            <div class="projectboximg"><img src="img/storyline.png" class="talks"></div>
+                <div class="projectboxdes"><h4><u>StoryLineJS</u></h4>
+        <p>StoryLineJS is a storytelling line chart tool that I worked on for the Knight Lab.  I started working on the development of this tool in spring 2016.</p>  
+                    <p>To start off, I conducted research on existing charting tools and stories that use line charts.  Next, I worked on sketching and prototyping how the tool would look and work.  I created paper prototypes and iteratively tested them.  Finally, I worked on a web prototype using HTML, CSS, JavaScript and d3.js.</p>
+                    <p>This project is currently still in the works.</p>
+    </div>
+            </div>
+          <br>
+               <br>
+    
+ <div class="projectboxtalks">
+    <div class="projectboximg"><a href="http://eecs394-s16.github.io/eRetirements/" target="_blank"><img src="img/eretirements.png" class="talks"></a></div>
+     <div class="projectboxdes"><h4><u><a href="http://eecs394-s16.github.io/eRetirements/" target="_blank">eRetirements</a></u></h4>
+    <p>For my Software Project Management and Development class, I worked on eRetirements with a group for a client.  Our client requested that we redesign the interface of the questionnaire of eRetirements, a website that recommends to users places to retire.</p>
+         <p>We designed the interface so that the questionnaire would feel more personalized, as users can rate how important a category is to them when considering where to retire.  Furthermore, users can take answer questions in any order they wnt, and they can go back to previous questions, as answers are saved.  In order to appeal to middle-aged and elderly users, we worked on implementing an easy-to-use, user-friendly questionnaire.</p>
+         <p>For this project, we used HTML, CSS and JavaScript.  Check it out <a href="http://eecs394-s16.github.io/eRetirements/" target="_blank">here</a>.</p>
+                    
+    </div>
+            </div>
+          <br><br>
+  <div class="projectboxtalks">
+            <div class="projectboximg"><img src="img/geovibes.png" class="talks"></div>
+                <div class="projectboxdes"><h4><u>GeoVibes</u></h4>
+        <p>For my Software Project Management and Development class, I worked on GeoVibes with a group.  We came up with the idea for this iOS app ourselves.  The idea behind this app is, you can search a place, and this app will tell you where it is and what the "vibe" there currently is by giving you a positivity rating.  For example, Disney World always has a really positive vibe.</p>
+                    <p>For this project, we used AppGyver, the Google Maps API, the Twitter API and a sentiment analysis API.  The app comes up with a positivity rating based on tweets about the searched location.</p>
+    </div>
+            </div>
+          <br><br>
+      <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.eecs.northwestern.edu/wic/" target="_blank"><img src="img/wic.png" class="talks"></a></div>
+          <div class="projectboxdes"><h4><u><a href="http://www.eecs.northwestern.edu/wic/" target="_blank">Women In Computing Website</a></u></h4>
+       <p>Currently, I serve as the public relations co-chair and the webmaster of Women In Computing (WiC), a student group for Northwestern students who identify as a woman and who are interested in computer science.  As webmaster, I manage the website, and over the summer, I redesigned it.</p>
+              <p>In redesigning <a href="http://www.eecs.northwestern.edu/wic/" target="_blank">WiC's website</a>, I used the concepts of material design and parallax design.  I also worked on making the website mobile-friendly.  I used trianglify.js for the website's background.</p>
+              <p>If there are issues or design suggestions for the website, please <a href="mailto:rosaliechan2017@u.northwestern.edu" target="_blank">email me</a>.</p>
+    </div>
+            </div>
+    <br><br>
+          <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://rude.herokuapp.com/" target="_blank"><img src="img/rude.png" class="talks"></a></div>
+              <div class="projectboxdes"><h4><u><a href="http://rude.herokuapp.com/" target="_blank">Rude!</a></u></h4>
+                  <p>In February 2016, I attended HackIllinois, a hackathon hosted by the University of Illinois Urbana-Champaign.  My group created <a href="http://rude.herokuapp.com/" target="_blank">Rude!</a>, an Android app that encourages you to spend quality time with your friends, rather than your phone.</p>
+                  <p>To use this app, when you're with friends, you can switch your phone to "social mode."  You earn points for not touching your phone during the time you spend with friends, but if you touch your phone, you lose points, and your phone will give you a sassy message.  If you touch your phone three times, an embarassing Facebook status will be posted on your wall.</p>
+                  <p>We used Android Studio to develop this app.  Ideally, the points would be used to redeem coupons and offers at local businesses.</p>
+    </div>
+            </div>
+    <br><br>
+ <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/submerged/" target="_blank"><img src="img/submerged.png" class="talks"></a></div>
+                <div class="projectboxdes"><h4><u><a href="http://apps.northbynorthwestern.com/submerged/" target="_blank">Submerged</a></u></h4>
+                    <p>When I served as Interactive Editor of North by Northwestern, I led a small team in the development of "Submerged," a multimedia project that showed photography and footage of Northwestern's aquatic sports.  North by Northwestern obtained an underwater GoPro for this project, which was made possible by the Crepe Bistro Memorial Fund founded by North by Northwestern alumni.</p>
+                    <p>Check out the story <a href="http://apps.northbynorthwestern.com/submerged/" target="_blank">here</a>.</p>
+    </div>
+            </div>
+    <br><br>
+ <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/homeless/" target="_blank"><img src="img/homeless.png" class="talks"></a></div>
+                <div class="projectboxdes"><h4><u><a href="http://apps.northbynorthwestern.com/homeless/" target="_blank">Graduated and Homeless</a></u></h4>
+                    <p>When I served as Interactive Editor of North by Northwestern, I led the development of "Graduated and Homeless," a multimedia story about a homeless Northwestern alumnus.</p>
+                    <p>The story is told using photos, audio recordings and an NPR visuals template, which is open-sourced.  After this story's publication, it became a huge hit and was shared by many Northwestern students and staff on social media.</p>
+                    <p>Check out the story <a href="http://apps.northbynorthwestern.com/homeless/" target="_blank">here</a>.</p>
+    </div>
+            </div>
+    <br><br>
+  <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/index/" target="_blank"><img src="img/bball.png" class="talks"></a></div>
+                <div class="projectboxdes">
+                    <h4><u><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/index/" target="_blank">North by Northwestern Magazine</a></u></h4>
+                    <p>In spring 2015, I worked as a digital producer for North by Northwestern's quarterly magazine.  In developing the presentation of these stories, we used HTML, CSS, JavaScript and a Ruby template generator.  Below are the links to stories I designed and developed.</p>
+                    <p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/march-madness/" >The Long Road to March Madness</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/zaramela/" >A Long-Distance Harmony</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/toby-jugs/" >Show Me Your Jugs</a></p>
+   	<p><a href="http://apps.northbynorthwestern.com/magazine/2015/spring/nu-divest/" >Divided Discourse</a></p>
+    </div>
+            </div>
+    <br><br>
+     <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank"><img src="img/madlibs.png" class="talks"></a></div>
+         <div class="projectboxdes"><h4><u><a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank">Mad Libs Northwestern Edition</a></u></h4>
+                    <p>During the quarter I served as Interactive Editor of North by Northwestern, the Interactive section started a weekly Northwestern-themed mad libs.  I taught my staffers how to code in HTML, CSS and JavaScript to generate mad libs games and stories.</p>
+             <p>Check out one example <a href="http://www.northbynorthwestern.com/story/tips-and-tricks-for-dillo-day/" target="_blank">here</a>.</p>
+    </div>
+    </div>
+            </div>
+    <br><br>
+         <div class="projectboxtalks">
+            <div class="projectboximg"><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank"><img src="img/wiki.png" class="talks"></a></div>
+             <div class="projectboxdes"><h4><u><a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank">Wiki Studio</a></u></h4>
+                    <p>In spring 2015, I took a course called Innovation in Journalism and Technology.  I developed Wiki Studio with three other students.  Wiki Studio is a video crowdsourcing website that allows people to upload video clips to a movie that has many contributors, similar to <a href="http://www.starwarsuncut.com/" target="_blank">Star Wars Uncut</a>.</p>
+                 <p>In creating this app, we sketched and created paper prototypes, and we iteratively designed the prototype based on user tests.  We developed this app using HTML, CSS, JavaScript and Ruby on Rails.  You can read more about Wiki Studio in my <a href="https://medium.com/@RosalieChan17/wiki-studio-5bbc0b395625" target="_blank">Medium post</a>.</p>
+    </div>
+            </div>
+             
+    <br><br>
+         <div class="projectboxtalks">
+            <div class="projectboximg"><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank"><img src="img/mochi.png" class="talks"></a></div>
+             <div class="projectboxdes"><h4><u><a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank">Mochi's 25 Hottest Asian American Men Worth Watching</a></u></h4>
+                    <p>From January 2015 to April 2016, I served as the Web Editor of Mochi Magazine, an online magazine for young Asian American women. As Web Editor, I created interactive stories.</p>
+                 <p>In Mochi's Summer 2015, Mochi put together a feature on the 25 hottest Asian American men worth watching.  These included musicians, designers, models, athletes, politicians, actors and entrepreneurs.</p>
+                 <p>I used HTML, CSS and JavaScript to develop this project.  Check out the story <a href="http://www.mochimag.com/article/mochis-25-asian-american-men-worth-watching" target="_blank">here</a>.</p>
+    </div>
+            </div>
+    
