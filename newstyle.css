@@ -42,9 +42,9 @@ div {
 }
 
 p {
-    margin-left: 5%;
-    margin-right:5%;
-    font-size:1em;
+    margin-left: 15%;
+    margin-right:15%;
+    font-size:1.1em;
 }
 
 header {
@@ -118,7 +118,7 @@ span:hover {
 h3 {
     font-size:2em;
     color:white;
-    padding-left:5%;
+    padding-left:15%;
     padding-bottom:1%;
 }
 
@@ -128,7 +128,7 @@ img {
 }
 
 h4 {
-    padding-left:5%;
+    padding-left:15%;
     font-size:1.5em;
 }
 
@@ -145,8 +145,8 @@ h4 {
 /*    height:68%;*/
     background-color: white;
     box-shadow: 3px 3px 3px lightgray;
-    margin-left:5%;
-    margin-right:5%;
+    margin-left:15%;
+    margin-right:15%;
 }
 .projectboxtalks {
     height:45%;
@@ -188,13 +188,12 @@ nav {
     top:0;
     box-shadow: 2px 2px 2px #888888;
     z-index: 999;
-    display:none;
     width:100%;
 }
 
 h2 {
     color: black;
-    margin-left:5%;
+    margin-left:15%;
 }
 
 img:hover {
