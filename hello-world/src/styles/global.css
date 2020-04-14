@@ -1,0 +1,10 @@
+html {
+    /* background-color: aliceblue; */
+    max-width:850px;
+    margin: 0 auto;
+  }
+
+  a:hover {
+    background-color: dodgerblue;
+    color:aliceblue;
+  }
